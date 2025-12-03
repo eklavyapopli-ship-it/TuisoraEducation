@@ -1,6 +1,9 @@
 "use client"
 import { motion } from 'framer-motion'
 import { TypeAnimation } from "react-type-animation";
+import { HeroLinks } from '@/components/lib/navlinks';
+import { div } from 'framer-motion/client';
+import Link from 'next/link';
 const Hero = () => {
   return (
     <section className='w-full flex justify-center'>
@@ -17,17 +20,20 @@ const Hero = () => {
         style={{overflow:"hidden"}}
         initial={{x:180,opacity:0}}
         animate={{x:0,opacity:1}}
-        transition={{duration:0.5,ease:"easeIn"}}>
-        <div className='text-xl md:text-2xl font-bold text-gray-900 mb-6'>
+        transition={{duration:0.5,ease:"easeIn"}} className='flex justify-center flex-col lg:place-items-start place-items-center'>
+        <div className='text-2xl md:text-5xl  font-bold text-gray-900 md:w-auto text-center md:text-left'>
        <TypeAnimation
       sequence={["Next-Gen Learning Starts Here",1000]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={{  display: 'inline-block' }}
       repeat={Infinity}
     /></div>
-        <motion.div
-        className='text-black text-sm md:text-xl md:text-justify text-center '>Interactive lessons, mock tests, and personalized guidance for every student.</motion.div>
+        <p className='text-black text-sm md:text-xl mt-10 lg:text-justify text-center w-80 sm:w-145'>Interactive lessons, mock tests, and personalized guidance for every student.</p>
+        <div className='flex space-x-10 mt-5 justify-center'>
+        {HeroLinks.map((item)=>(
+          <Link key={item.id} href={item.link} ><div className='bg-blue-600 text-white text-center text-md md:px-7 md:py-2 py-1 px-5 font-bold rounded-full hover:bg-blue-700'>{item.name}</div></Link>
+        ))}</div>
         </motion.div>
     </div>
     </section>

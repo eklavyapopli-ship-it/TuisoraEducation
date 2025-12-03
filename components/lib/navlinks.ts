@@ -3,12 +3,16 @@ interface NavLink {
     name: string;
     link: string;
 }
-
+interface HeroLinks {
+    id:number;
+    name:string;
+    link:string;
+}
 export const navlinks: NavLink[] = [
     {
         id: 1,
         name: "Explore",
-        link: ""
+        link: "https://www.google.com"
     },
     {
         id: 2,
@@ -31,3 +35,22 @@ export const navlinks: NavLink[] = [
         link: ""
     }
 ];
+
+
+export const HeroLinks = [
+    {
+        id:1,
+        name: "JEE",
+        link:""
+    },
+    {
+        id:2,
+        name: "CUET",
+        link:""
+    },
+    {
+        id:3,
+        name: "CUCET",
+        link:""
+    }
+]
