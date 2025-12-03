@@ -18,11 +18,11 @@ const navVariant = {
 };
 
   return (
-    <motion.div animate="visible" variants={navVariant} initial="hidden" className='flex bg-white justify-around h-23 place-items-center  shadow-md w-full top-0 fixed'>
+    <motion.div animate="visible" variants={navVariant} initial="hidden" className='flex bg-white justify-around h-23 place-items-center  shadow-md w-full top-0 sticky'>
         <Image src="/logo.png" alt='' width={100} height={80}/>
     <div className='flex gap-8 ' >{links.map((item)=>(
         <Link key={item.id} href={item.link}>
-        <div className='text-blue-900 relative font-bold hover:text-blue-600 group'>{item.name}<div className='absolute scale-x-0 group-hover:scale-x-100 -bottom-2 left-0 right-0 h-1 origin-left rounded-full bg-blue-600 duration-300 ease-out'></div></div>
+        <div className='text-blue-900 relative font-bold hover:text-blue-600 group hidden md:flex'>{item.name}<div className='absolute scale-x-0 group-hover:scale-x-100 -bottom-2 left-0 right-0 h-1 origin-left rounded-full bg-blue-600 duration-300 ease-out'></div></div>
         </Link>
     ))}</div>
     </motion.div>
