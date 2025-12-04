@@ -6,8 +6,8 @@ import { div } from 'framer-motion/client';
 import Link from 'next/link';
 const Hero = () => {
   return (
-    <section className='w-full flex justify-center'>
-    <div className='flex flex-col lg:flex-row place-content-center place-items-center  md:justify-center lg:space-x-30 space-y-10 lg:mt-20 mt-10  max-w-6xl'>
+    <section className='w-full flex place-content-center place-items-start md:place-items-center  lg:h-[80vh] h-[60vh]'>
+    <div className='flex flex-col lg:flex-row place-content-center place-items-center  md:justify-center lg:space-x-30 space-y-10 mt-10 lg:mt-0  max-w-6xl'>
         <motion.div
          style={{overflow:"hidden"}}
         initial={{x:-180,opacity:0}}
@@ -29,10 +29,10 @@ const Hero = () => {
       style={{  display: 'inline-block' }}
       repeat={Infinity}
     /></div>
-        <p className='text-black text-sm md:text-xl mt-10 lg:text-justify text-center w-80 sm:w-145'>Interactive lessons, mock tests, and personalized guidance for every student.</p>
-        <div className='flex space-x-10 mt-5 justify-center'>
+        <p className='text-black text-sm md:text-xl mt-5 lg:text-justify text-center w-80 sm:w-145'>Interactive lessons, mock tests, and personalized guidance for every student.</p>
+        <div className='flex space-x-10 mt-5 place-content-center md:w-fit w-screen'>
         {HeroLinks.map((item)=>(
-          <Link key={item.id} href={item.link} ><div className='bg-blue-600 text-white text-center text-md md:px-7 md:py-2 py-1 px-5 font-bold rounded-full hover:bg-blue-700'>{item.name}</div></Link>
+          <Link key={item.id} href={item.link} ><div className='bg-blue-600 text-white text-center text-md md:px-7 md:py-2 py-1 px-5 font-bold rounded-full hover:bg-blue-700  shadow-lg'>{item.name}</div></Link>
         ))}</div>
         </motion.div>
     </div>

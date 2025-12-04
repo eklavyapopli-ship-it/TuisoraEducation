@@ -50,7 +50,7 @@ export const HeroLinks = [
     },
     {
         id:3,
-        name: "CUCET",
+        name: "CBSE",
         link:""
     }
 ]
