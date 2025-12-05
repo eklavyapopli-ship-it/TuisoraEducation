@@ -6,7 +6,7 @@ import { div } from 'framer-motion/client';
 import Link from 'next/link';
 const Hero = () => {
   return (
-    <section className='w-full flex place-content-center place-items-start md:place-items-center  lg:h-[80vh] h-[60vh]'>
+    <section className='w-full flex place-content-center place-items-start md:place-items-center mt-14 md:mt-0 lg:h-[80vh] h-[60vh]'>
     <div className='flex flex-col lg:flex-row place-content-center place-items-center  md:justify-center lg:space-x-30 space-y-10 mt-10 lg:mt-0  max-w-6xl'>
         <motion.div
          style={{overflow:"hidden"}}
