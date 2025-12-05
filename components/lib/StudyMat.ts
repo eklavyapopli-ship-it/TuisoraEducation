@@ -48,4 +48,18 @@ export const MaterialCards = [
         subHead: "",
         color:"rgb(221,254,221)",
     },
+    {
+        id:7,
+        link:"",
+        heading:"JEE | NDA | IPMAT",
+        subHead: "Important Questions",
+        color:"rgb(221,254,221)",
+    },
+    {
+        id:8,
+        link:"",
+        heading:"CUET",
+        subHead: "Important Questions",
+        color:"rgb(221,254,221)",
+    },
 ]

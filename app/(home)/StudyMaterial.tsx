@@ -22,13 +22,13 @@ const StudyMaterial = () => {
           {card.map((item) => (
             <Link target="_blank" key={item.id} href={item.link}>
             <motion.div
-            style={{overflow:"hidden",background:item.color}}
+            style={{overflow:"hidden"}}
       initial={{y:-40,opacity:0}}
       animate={{y:0}}
       whileInView={{opacity:1}}
       whileHover={{scale:1.03}}
       transition={{duration:0.2,ease:"easeInOut"}}
-             className="h-80 w-60 relative shadow-sm flex flex-col place-items-center text-black font-bold text-md pt-10 rounded-2xl">
+             className="h-80 w-60 relative shadow-sm flex flex-col place-items-center text-black font-bold text-md pt-10 rounded-2xl bg-gray-50">
               <div>{item.heading}</div>
               <div className="text-md font-medium text-gray-800">{item.subHead}</div>
 

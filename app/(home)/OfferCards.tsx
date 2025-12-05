@@ -8,7 +8,7 @@ const josefin = Josefin_Sans({
 })
 const OfferCards = () => {
   return (
-    <section className='w-screen h-fit'>
+    <section className='w-screen h-fit mt-0 md:mt-30 lg:mt-0'>
       <motion.div
       style={{overflow:"hidden"}}
       initial={{y:-40,opacity:0}}
@@ -19,8 +19,9 @@ const OfferCards = () => {
       <div className='w-full h-fit pb-10 flex justify-center lg:space-y-0 space-y-5  mt-15 lg:space-x-8 lg:mt-20 lg:flex-row flex-col lg:place-content-center place-items-center'>
         {OfferHeads.map((item)=>(
           <motion.div
-          whileHover={{scale:1.05}}
-           className='flex relative shadow-lg flex-col lg:h-120 h-fit rounded-2xl border-blue-600 place-items-center border py-8 lg:w-100 w-80  px-15 space-y-5' key={item.id}>
+          whileHover={{scale:1.03}}
+          transition={{duration:1}}
+           className='flex relative shadow-lg flex-col md:h-120 h-fit rounded-2xl border-blue-600 place-items-center border py-8 lg:w-100 w-80  px-15 space-y-5' key={item.id}>
             <span className='text-black font-bold'>{item.name}</span>
             <h1 className='font-bold text-black text-2xl'>HOME TUITION</h1>
             <div className='lg:mt-5  space-y-3'>
