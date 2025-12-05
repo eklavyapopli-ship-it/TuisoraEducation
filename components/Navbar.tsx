@@ -18,7 +18,7 @@ const navVariant = {
 };
 
   return (
-    <motion.div animate="visible" variants={navVariant} initial="hidden" className='flex bg-white justify-around h-20 place-items-center  shadow-md w-full  top-0 sticky'>
+    <motion.div animate="visible" variants={navVariant} initial="hidden" className='flex bg-white justify-around h-20 place-items-center  shadow-md w-full  top-0 fixed z-1'>
         <Image src="/logo.png" alt='' width={100} height={80}/>
     <div className='flex gap-8 ' >{links.map((item)=>(
         <Link key={item.id} href={item.link} target='__blank'>
