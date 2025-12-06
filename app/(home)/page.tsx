@@ -8,7 +8,8 @@ const Home = () => {
    <Hero/>
    <OfferCards/>
    <StudyMaterial/>
-   <ReviewCards/>
+   <ReviewCards limit={4}/>
+   
    </>
   )
 }
