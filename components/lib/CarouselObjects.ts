@@ -28,9 +28,9 @@ export const CarouselObjects = [
         icon: BrainCircuit,
         heading: "Learn Smarter",
         Points: [
-            { PointId: 1, MainPoint: "AI-powered personalised learning" },
-            { PointId: 2, MainPoint: "Smart suggestions for weak topics" },
-            { PointId: 3, MainPoint: "Faster improvement with analytics" },
+            { PointId: 1, MainPoint: "Personalised learning" },
+            { PointId: 2, MainPoint: "Smart suggestions " },
+            { PointId: 3, MainPoint: "Improvement with analytics" },
         ],
     },
     {
@@ -103,18 +103,9 @@ export const CarouselObjects = [
             { PointId: 3, MainPoint: "Weekly progress emails" },
         ],
     },
+  
     {
         id: 9,
-        icon: Fingerprint,
-        heading: "Attendance Tracker",
-        Points: [
-            { PointId: 1, MainPoint: "Fingerprint / RFID support" },
-            { PointId: 2, MainPoint: "Auto-sync with teacher app" },
-            { PointId: 3, MainPoint: "Error-free daily tracking" },
-        ],
-    },
-    {
-        id: 10,
         icon: Compass,
         heading: "Career Guidance",
         Points: [

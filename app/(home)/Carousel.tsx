@@ -2,6 +2,7 @@
 import Autoplay from "embla-carousel-autoplay"
 import { Card, CardContent } from "@/components/ui/card"
 import { Josefin_Sans } from 'next/font/google'
+import { CircleCheckBig } from 'lucide-react';
 
 import {
   Carousel,
@@ -20,7 +21,7 @@ export function CarouselDemo() {
     <Carousel
      plugins={[
         Autoplay({
-          delay: 2000,
+          delay: 4000,
         }),
       ]}
      className=" max-w-7xl mx-auto">
@@ -34,10 +35,11 @@ export function CarouselDemo() {
               <Card>
                 <CardContent className="flex ">
                   <div className="flex flex-col w-full flex-1 place-items-center md:space-y-5 place-content-center">
+                    <div className="flex flex-col place-items-center">
                   <div className="text-2xl font-semibold"><item.icon className="h-10 w-10 text-blue-600"/></div>
-                  <div>{item.heading}</div>
-                  <div className="space-y-2">{item.Points.map((point)=>(
-                    <div key={point.PointId}><span className="text-blue-600">✔ </span> {point.MainPoint}</div>
+                  <div>{item.heading}</div></div>
+                  <div className=" space-y-2 flex flex-col flex-1 w-fit">{item.Points.map((point)=>(
+                    <div key={point.PointId} className="flex place-items-center"><CircleCheckBig className="h-4 text-blue-600"/> &ensp;{point.MainPoint}</div>
                   ))}</div>
                   <div></div>
                   </div>
