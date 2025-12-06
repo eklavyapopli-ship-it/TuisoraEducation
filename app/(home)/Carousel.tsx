@@ -32,12 +32,12 @@ export function CarouselDemo() {
         
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-square ">
-                  <div className="flex flex-col w-full flex-1 place-items-center md:space-y-5  place-content-center">
-                  <div className="text-2xl font-semibold"><item.icon className="h-10 w-10"/></div>
+                <CardContent className="flex ">
+                  <div className="flex flex-col w-full flex-1 place-items-center md:space-y-5 place-content-center">
+                  <div className="text-2xl font-semibold"><item.icon className="h-10 w-10 text-blue-600"/></div>
                   <div>{item.heading}</div>
                   <div className="space-y-2">{item.Points.map((point)=>(
-                    <div key={point.PointId}>{point.MainPoint}</div>
+                    <div key={point.PointId}><span className="text-blue-600">✔ </span> {point.MainPoint}</div>
                   ))}</div>
                   <div></div>
                   </div>
