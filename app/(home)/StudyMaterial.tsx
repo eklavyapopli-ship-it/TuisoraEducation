@@ -16,7 +16,7 @@ const StudyMaterial = () => {
       animate={{y:0}}
       whileInView={{opacity:1}}
       transition={{duration:0.5,ease:"easeInOut"}}
-      className="text-center text-black text-4xl lg:text-6xl font-bold">STUDY <span className="text-blue-600">MATERIAL</span></motion.div>
+      className="text-center text-black text-4xl lg:text-5xl font-bold">STUDY <span className="text-blue-600">MATERIAL</span></motion.div>
       <div className="w-full h-fit flex flex-col place-items-center mt-20 md:mt-0">
         <div className="place-items-center md:grid lg:grid-cols-4 md:grid-cols-3 flex flex-col gap-x-25 gap-y-20 md:m-20">
           {card.map((item) => (

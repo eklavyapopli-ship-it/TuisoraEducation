@@ -42,7 +42,7 @@ const ReviewCards: React.FC<dataDisplay> = ({limit}) => {
             <div className=" mt-20 lg:grid lg:grid-cols-2 gap-x-10 gap-y-20  place-items-center flex flex-col">
                 {limitedData.map((item) => (
                     <motion.div
-                    whileHover={{scale:1.03}}
+                    whileHover={{scale:1.02}} transition={{duration:0.3}}
                      key={item._id} className={`md:h-60 h-fit  p-10 md:w-150 gap-y-10 w-fit m-1 border-black rounded-2xl hover:shadow-xl flex flex-col relative shadow-md text-black ${josefin.className}`}>
                         <div className="flex place-items-end place-content-start flex-1 w-full gap-6"><img src="/userIcon.png" alt="" className="h-20 w-22" />
                        <div className="mb-1"> <div className="md:text-xl">Name: {item.name}</div>

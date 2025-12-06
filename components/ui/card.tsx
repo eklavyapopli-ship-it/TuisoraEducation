@@ -1,17 +1,18 @@
 import * as React from "react"
-
+import { motion, scale } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
+    <motion.div whileHover={{scale:1.05}} transition={{duration:0.3}}>
     <div
       data-slot="card"
       className={cn(
-        "flex flex-col gap-6 border bg-white text-black rounded-xl place-content-center lg:h-80 h-fit shadow-sm",
+        "flex flex-col gap-6 border bg-white text-black rounded-xl place-content-center lg:h-80 h-fit shadow-sm ",
         className
       )}
       {...props}
-    />
+    /></motion.div>
   )
 }
 
