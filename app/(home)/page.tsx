@@ -1,3 +1,4 @@
+import { CarouselDemo } from "./Carousel"
 import Hero from "./hero"
 import OfferCards from "./OfferCards"
 import ReviewCards from "./ReviewCards"
@@ -9,7 +10,9 @@ const Home = () => {
    <OfferCards/>
    <StudyMaterial/>
    <ReviewCards limit={4}/>
-   
+   <div className="border place-items-center md:w-full w-2xl">
+   <CarouselDemo/>
+   </div>
    </>
   )
 }
