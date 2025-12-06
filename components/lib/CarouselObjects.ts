@@ -1,3 +1,17 @@
+import {
+  BrainCircuit,
+  CalendarCheck,
+  MessageCircle,
+  BarChart3,
+  FileCheck,
+  BookOpen,
+  BellRing,
+  Users2,
+  Fingerprint,
+  Compass,
+  Icon
+} from "lucide-react";
+
 interface CarouselObjects {
     id: number;
     icon: any;
@@ -11,7 +25,7 @@ interface CarouselObjects {
 export const CarouselObjects = [
     {
         id: 1,
-        icon: "BrainCircuit",
+        icon: BrainCircuit,
         heading: "Learn Smarter",
         Points: [
             { PointId: 1, MainPoint: "AI-powered personalised learning" },
@@ -21,7 +35,7 @@ export const CarouselObjects = [
     },
     {
         id: 2,
-        icon: "CalendarCheck",
+        icon: CalendarCheck,
         heading: "Daily Practice",
         Points: [
             { PointId: 1, MainPoint: "Auto-generated daily tasks" },
@@ -31,7 +45,7 @@ export const CarouselObjects = [
     },
     {
         id: 3,
-        icon: "MessageCircle",
+        icon: MessageCircle,
         heading: "Doubt Solving",
         Points: [
             { PointId: 1, MainPoint: "Ask doubts anytime" },
@@ -41,7 +55,7 @@ export const CarouselObjects = [
     },
     {
         id: 4,
-        icon: "BarChart3",
+        icon: BarChart3,
         heading: "Progress Dashboard",
         Points: [
             { PointId: 1, MainPoint: "Visual learning analytics" },
@@ -51,7 +65,7 @@ export const CarouselObjects = [
     },
     {
         id: 5,
-        icon: "FileCheck",
+        icon: FileCheck,
         heading: "Mock Tests",
         Points: [
             { PointId: 1, MainPoint: "Real exam pattern tests" },
@@ -61,7 +75,7 @@ export const CarouselObjects = [
     },
     {
         id: 6,
-        icon: "BookOpen",
+        icon: BookOpen,
         heading: "Study Material Hub",
         Points: [
             { PointId: 1, MainPoint: "Notes for all subjects" },
@@ -71,7 +85,7 @@ export const CarouselObjects = [
     },
     {
         id: 7,
-        icon: "BellRing",
+        icon: BellRing,
         heading: "Smart Reminders",
         Points: [
             { PointId: 1, MainPoint: "Homework reminders" },
@@ -81,7 +95,7 @@ export const CarouselObjects = [
     },
     {
         id: 8,
-        icon: "Users2",
+        icon: Users2,
         heading: "Parent Dashboard",
         Points: [
             { PointId: 1, MainPoint: "Transparent performance view" },
@@ -91,7 +105,7 @@ export const CarouselObjects = [
     },
     {
         id: 9,
-        icon: "Fingerprint",
+        icon: Fingerprint,
         heading: "Attendance Tracker",
         Points: [
             { PointId: 1, MainPoint: "Fingerprint / RFID support" },
@@ -101,7 +115,7 @@ export const CarouselObjects = [
     },
     {
         id: 10,
-        icon: "Compass",
+        icon: Compass,
         heading: "Career Guidance",
         Points: [
             { PointId: 1, MainPoint: "AI-based career suggestions" },
