@@ -10,7 +10,7 @@ const Home = () => {
    <OfferCards/>
    <StudyMaterial/>
    <ReviewCards limit={4}/>
-   <div className="border place-items-center md:w-full w-2xl">
+   <div className="p-20 border">
    <CarouselDemo/>
    </div>
    </>

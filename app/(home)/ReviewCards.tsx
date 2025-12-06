@@ -37,7 +37,7 @@ const ReviewCards: React.FC<dataDisplay> = ({limit}) => {
     return (
 
 
-        <div className={`max-w-7xl mx-auto h-fit pb-20 mt-20 ${josefin.className} flex flex-col justify-center place-items-center`}>
+        <div className={`max-w-7xl mx-auto h-fit mt-20 ${josefin.className} flex flex-col justify-center place-items-center`}>
             <h1 className={`md:text-5xl text-3xl text-center font-bold text-black ${josefin.className}`}>STUDENT <span className="text-blue-600">REVIEWS</span></h1>
             <div className=" mt-20 lg:grid lg:grid-cols-2 gap-x-10 gap-y-20  place-items-center flex flex-col">
                 {limitedData.map((item) => (
